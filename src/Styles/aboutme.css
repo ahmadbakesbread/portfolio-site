@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.title {
+    font-family: 'Dongle', sans-serif;
+    font-size: 60px;
+    color: #dcc48e;
+    text-shadow: 
+        -1px -1px 0 #160d47,  
+        1px -1px 0 #160d47,
+        -1px 1px 0 #160d47,
+        1px 1px 0 #160d47;
+}
+
+.aboutme-container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, #312c51, #505168, #7F6A93);
+    background-size: 200% 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: animate 8s ease infinite;
+}
+
+.aboutme-content {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: #eff3e0;
+}
+
+.tech-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.tech-list li {
+    background: transparent;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 2px;
+    width: 50px;
+    max-width: 60%;
+    max-height: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eff3e0;
+    display: flex; /* This will enable flexbox */
+    flex-wrap: wrap; /* This will allow items to wrap onto the next line */
+    align-items: center; /* This will align items vertically */
+    justify-content: flex-start; /* This aligns items to the start of the container */
+    max-width: 80%; /* Set a max-width for the list to control when items should wrap */
+    gap: 5px; /* This adds space between items */
+    padding: 0; /* Remove padding to align items properly */
+    list-style: none; /* Remove default list styling */
+}
+
+.tech-item {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 10px; /* Add padding inside the border */
+  margin: 5px;
+  background: transparent; /* Or any background color you prefer */
+  flex-wrap: wrap; /* Allow items to wrap */
+  width: calc((100% / 8) - (10px * 2));
+    margin: 5px; /* Optional: if you want space between items */
+    text-align: center; /* Center text/icons within the item */
+
+}
+
+
+.tech-list li img.tech-icon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  filter: hue-rotate(180deg); /* Adjust the hue to match the desired color */
+  fill: #dcc48e; 
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.line {
+    width: 60%;
+    height: 2px;
+    background-color: #160d47;
+    border-radius: 10%;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1s; /* This controls how long the fade-in takes */
+  animation-fill-mode: both; /* This makes sure the final state (opacity: 1) persists after the animation */
+}
+
+.slide-up {
+  animation: slideUp 1s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 1; }
+  to { opacity: 0; transform: translateY(-50px) translateX(-50%); }
+}
+
+.image-container{
+  width: 500px; /* Decrease the width */
+  height: 667px; /* Decrease the height proportionally */
+  border-radius: 50px;
+  border: 1px solid #B3C0A4;
+  background: linear-gradient(-45deg, #312c51, #505168, #7F6A93);
+  animation: animate 8s ease infinite; /* Apply the same animation */
+
+}
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #312c51, #505168, #7F6A93); /* Use the same gradient colors as your .aboutme-container */
+  animation: animate 8s ease infinite; /* Apply the same animation */
+}
+
+.transition-effect {
+  transition: transform 0.5s ease; /* Adjust duration and easing function as needed */
+}
+
+
+.resume {
+  text-decoration: none; /* Remove underline */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #b3c0a4;
+  transition: color 0.3s, text-shadow 0.3s; /* Add transition for color change */
+  text-shadow: 
+      -1px -1px 0 #160d47,  
+      1px -1px 0 #160d47,
+      -1px 1px 0 #160d47,
+      1px 1px 0 #160d47;
+}
+
+.resume:hover {
+  color: #90a876; /* Change text color on hover */
+}
+
+.resume::before {
+content: ''; /* Add content for pseudo-element */
+position: absolute; /* Position the pseudo-element absolutely */
+left: 0; /* Position from the left edge of the link */
+bottom: -5px; /* Adjust the position of the underline */
+width: 0; /* Initial width of the underline */
+height: 2px; /* Height of the underline */
+background-color: #90a876; /* Color of the underline */
+transition: width 0.25s ease-out; /* Transition width for smooth effect */
+}
+
+.resume:hover::before {
+width: 100%; /* Expand the underline width on hover */
+}
+
+.arrow-down {
+  margin-left: 5px; /* Adjust the spacing between text and icon */
+}
+
+.links {
+  font-family: Helvetica, Arial, sans-serif; /* Include fallback fonts */
+  font-size: 15px;
+  color: #EAEFD3;
+  position: relative; /* Necessary for absolute positioning of ::before pseudo-element */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.25s ease-out; /* Add transition for color change */
+}
+
+.links::before {
+  position: absolute;
+  left: 0;
+  bottom: -10%;
+  width: 0;
+  height: 1px;
+  background-color: #EAEFD3;
+  transition: width 0.25s ease-out; /* Transition for the underline width */
+  content: ''; /* Necessary for pseudo-element content */
+}
+
+.links:hover {
+  color: #B3C0A4; /* Change color on hover */
+}
+
+.links:hover::before {
+  width: 100%; /* Expand the underline width on hover */
+}
+
+.icon:hover{
+  filter: brightness(0) saturate(100%) invert(20%) sepia(70%) saturate(3000%) hue-rotate(160deg) brightness(90%) contrast(90%);
+  transform: translateY(-10px);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+

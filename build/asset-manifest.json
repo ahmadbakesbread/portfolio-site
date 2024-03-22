@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/portfolio-site/static/css/main.ab3f5733.css",
+    "main.js": "/portfolio-site/static/js/main.93a182b9.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio-site/static/js/787.1ed0c42c.chunk.js",
+    "static/media/ahmad.jpg": "/portfolio-site/static/media/ahmad.72cd671210ed4b677b43.jpg",
+    "static/media/redpanda.png": "/portfolio-site/static/media/redpanda.baaa1749f73344f99bd9.png",
+    "static/media/prediction.png": "/portfolio-site/static/media/prediction.561018f1b95275c42f31.png",
+    "static/media/NewResume.pdf": "/portfolio-site/static/media/NewResume.ea1440bb55b86eca2d7e.pdf",
+    "static/media/pong.png": "/portfolio-site/static/media/pong.0f4d66d1c1d1913776d4.png",
+    "static/media/flask.svg": "/portfolio-site/static/media/flask.cb2b05a4db05b1af528310275eeec7b3.svg",
+    "static/media/keys.png": "/portfolio-site/static/media/keys.5752a167850929c6d158.png",
+    "static/media/attendance2.jpg": "/portfolio-site/static/media/attendance2.319875f2ea10260fe910.jpg",
+    "static/media/auction.jpeg": "/portfolio-site/static/media/auction.85bd67d3b32a50bb74de.jpeg",
+    "static/media/linux.svg": "/portfolio-site/static/media/linux.0d782cb177e8309bae2ce24e6fe8f628.svg",
+    "static/media/mysql.svg": "/portfolio-site/static/media/mysql.13c8b3b29693060f04dae72cf0869536.svg",
+    "static/media/java.svg": "/portfolio-site/static/media/java.2b00242ec585178e7a2a4ea69e42f3e5.svg",
+    "static/media/react.svg": "/portfolio-site/static/media/react.fdc8d09d3f29893557b5f412941c56ab.svg",
+    "static/media/kubernetes.svg": "/portfolio-site/static/media/kubernetes.9c9fc9040a0fd2844e67e5c0c2832074.svg",
+    "static/media/docker.svg": "/portfolio-site/static/media/docker.0abb2ec565ebcec62ffceff021b818e8.svg",
+    "static/media/github1.svg": "/portfolio-site/static/media/github1.8c3b58d000eb10cfbdb1cf303b65fc22.svg",
+    "static/media/logo.svg": "/portfolio-site/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/python.svg": "/portfolio-site/static/media/python.c8f1ab830df9a60ecad5eb03488e1198.svg",
+    "static/media/javascript.svg": "/portfolio-site/static/media/javascript.fb83c32c788791acf01a155815b01db3.svg",
+    "static/media/C.svg": "/portfolio-site/static/media/C.8ffc99b5f1902990b5814f5c13a81799.svg",
+    "static/media/bash.svg": "/portfolio-site/static/media/bash.c1a20fb2716ed83033baab096c220108.svg",
+    "static/media/sqllite.svg": "/portfolio-site/static/media/sqllite.42fc20aae6c604763810ed039cb5cb96.svg",
+    "static/media/linkedin1.svg": "/portfolio-site/static/media/linkedin1.c40598134f3cb4fb837df0700e89d101.svg",
+    "static/media/typescript.svg": "/portfolio-site/static/media/typescript.e44b6bc68e6229bd77d36d883dd63c10.svg",
+    "static/media/html.svg": "/portfolio-site/static/media/html.27df3efc4d0fb09b98fca7eab8250f91.svg",
+    "static/media/css.svg": "/portfolio-site/static/media/css.fd1d28243cf8bfa4471c945b2dc40cdb.svg",
+    "static/media/spring-boot.svg": "/portfolio-site/static/media/spring-boot.572dc26434519175bdce1453651849db.svg",
+    "static/media/gmail.svg": "/portfolio-site/static/media/gmail.ee5093bec7095718dfd0b5708e6dc282.svg",
+    "index.html": "/portfolio-site/index.html",
+    "main.ab3f5733.css.map": "/portfolio-site/static/css/main.ab3f5733.css.map",
+    "main.93a182b9.js.map": "/portfolio-site/static/js/main.93a182b9.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio-site/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab3f5733.css",
+    "static/js/main.93a182b9.js"
+  ]
+}
