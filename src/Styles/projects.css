@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+.project {
+    position: absolute; /* Add absolute positioning */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 500px; /* Adjust width as needed */
+    height: 250px; /* Adjust height as needed */
+    background-color: #505168; /* Dark background color */
+    color: #fff; /* Text color */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 200px; /* Increase line-height to push text down */
+    z-index: 2;
+    border: 1px solid #f9eac7;
+    border-radius: 3px;
+}
+
+.project:hover + .car {
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    background-color: #555; /* Lighter background color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.background {
+    background: linear-gradient(-45deg, #181039, #4a1e5e, #101D39);
+    background-size: 800% 800%; /* Increase the size of the background */
+    width: 100%;
+    height: 100vh;
+    animation: animate 10s ease infinite; /* Adjust animation timing and easing */
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 50%
+    }
+    50%{
+        background-position: 100% 50%
+    }
+    100%{
+        background-position: 0 50%
+    }
+
+
+}
+
+.text {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #B3C0A4;
+    text-shadow: 
+        -1px -1px 0 #EAEFD3,  
+        1px -1px 0 #EAEFD3,
+        -1px 1px 0 #EAEFD3,
+        1px 1px 0 #EAEFD3; /* Adjust the shadow offsets and colors to create the outline effect */
+}
+
+.period-container {
+    position: relative;
+  }
+  
+  .sphere {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff9f9;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px; /* Adjust the position to be aligned with the text */
+    background-color: #DCC48E
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.slide-up {
+    animation: slideUp 1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 1; }
+    to { opacity: 0; transform: translateY(-50px) translateX(-50%); }
+}
+
+.project-details {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #c0b8e2; /* Light purple text color for contrast */
+    padding: 20px; /* Adds some padding inside the box */
+    border-radius: 4px; /* Optional: adds rounded corners to the box */
+    position: absolute; /* Ensures the box is positioned relative to its nearest positioned ancestor */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the box */
+    width: 70%; /* Adjusts the width of the box to be 80% of its parent */
+    height: 70%; /* Auto height based on content */
+    z-index: 2; /* Ensures the box appears above the background image */
+}
+
+.project-details h3 {
+    font-size: 20px;
+    margin: 0; /* Removes default margins */
+    position: relative;
+    padding: 20px; /* Adds padding around the text */
+
+}
+
+.project-details p {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0; /* Removes default margins */
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin-top: 0;
+}
+
+.links {
+    font-family: Helvetica, sans-serif; /* Include fallback fonts */
+    font-size: 15px;
+    font-weight: 400;
+    color: #EAEFD3;
+    position: relative; /* Necessary for absolute positioning of ::before pseudo-element */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.25s ease-out; /* Add transition for color change */
+}
+
+.links::before {
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    width: 0;
+    height: 1px;
+    background-color: #EAEFD3;
+    transition: width 0.25s ease-out; /* Transition for the underline width */
+    content: ''; /* Necessary for pseudo-element content */
+}
+
+.links:hover {
+    color: #B3C0A4; /* Change color on hover */
+}
+
+.links:hover::before {
+    width: 100%; /* Expand the underline width on hover */
+}
+
+.keys-text {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #B3C0A4;
+}

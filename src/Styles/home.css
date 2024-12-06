@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+
+.english-text {
+    font-family: 'Press Start 2P', cursive;
+    opacity: 0;
+    transition: opacity 1s ease;  
+  }
+
+.cool-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #110c26; /* This color should match the body background color */
+    -webkit-text-stroke: 0.5px #EAEFD3; /* This is the color of the stroke */
+    position: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+}
+
+.french-text {
+    font-family: 'Cinzel', sans-serif;
+    opacity: 0;
+    transition: opacity 1s ease;  
+}
+
+.arabic-text {
+    font-family: 'Harmattan', sans-serif;
+    opacity: 0;
+    transition: opacity 1s ease;  
+}
+  
+body {
+    background-color: #110c26; 
+    height: 100%;
+    overflow: hidden; /* Optional: Prevent scrolling if particles cover the entire page */
+}
+.page {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.page-enter {
+    opacity: 1;
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+.slide-up {
+    animation: slideUp 1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 1; }
+    to { opacity: 0; transform: translateY(-50px) translateX(-50%); }
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.move-up {
+    position: absolute; /* Ensure the element is positioned absolutely or relatively */
+    top: 50%; /* Starting position */
+    animation: moveUp 1s forwards ease-in-out; /* Using forwards to retain the final state */
+}
+
+@keyframes moveUp {
+  from { top: 50%; } /* Starting position */
+  to { top: 40%; } /* Ending position */
+}
+  
+.typing-text {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 20px;
+    font-weight: 600;
+    min-width: 280px;
+    color: #EAEFD3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.typing-text span {
+    position: relative;
+}
+
+.typing-text span::before {
+    content: "Software Developer";
+    color: #B3C0A4;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #110c26;
+    border-left: 2px solid #B3C0A4;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #110c26;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "<p> I'm a Developer </p>";
+    }
+    21%,40%{
+        content: "<p> I'm a Engineer </p>";
+    }
+    41%,60%{
+        content: "<p> I'm a Learner </p>";
+    }
+    61%,80%{
+        content: "<p> I'm a Solver </p>";
+    }
+    81%,100%{
+        content: "<p> I'm a Athlete </p>";
+    }
+}
+
+@keyframes typing {
+    5%,10%,15%,20%,25%,30%,35%,40%,45%,50%,55%,60%,65%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+.panda {
+    z-index: 6;
+}
+.fireflies-canvas {
+    position: fixed; /* Or absolute, depending on your layout */
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Makes sure clicks pass through the canvas */
+    z-index: 3;
+  }
+  
+.links {
+    font-family: Helvetica, Arial, sans-serif; /* Include fallback fonts */
+    font-size: 15px;
+    color: #EAEFD3;
+    position: relative; /* Necessary for absolute positioning of ::before pseudo-element */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.25s ease-out; /* Add transition for color change */
+}
+
+.links::before {
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    width: 0;
+    height: 1px;
+    background-color: #EAEFD3;
+    transition: width 0.25s ease-out; /* Transition for the underline width */
+    content: ''; /* Necessary for pseudo-element content */
+}
+
+.links:hover {
+    color: #B3C0A4; /* Change color on hover */
+}
+
+.links:hover::before {
+    width: 100%; /* Expand the underline width on hover */
+}
+
+.icon:hover{
+    filter: brightness(0) saturate(100%) invert(20%) sepia(70%) saturate(3000%) hue-rotate(160deg) brightness(90%) contrast(90%);
+    transform: translateY(-10px);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
